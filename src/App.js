@@ -90,7 +90,7 @@ class App extends Component {
 
   render() {
     return (
-      <section>
+      <section className="content-container">
         <header>
           <h1>James Dean Does Other Stuff</h1>
         </header>
