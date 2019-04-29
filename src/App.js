@@ -84,8 +84,11 @@ const images = [
 ]
 
 class App extends Component {
+  state = {
+    imageNumber: []
+  }
   componentDidMount() {
-    console.log(images)
+    // console.log(images)
   }
 
   render() {
@@ -102,9 +105,12 @@ class App extends Component {
                 return (
                   <li key={image.id}>
                     <img src={image.image} />
-                    <p className={`ol li p {${image.id > 9 ? 'double-digit' : ''} `}>{image.id}</p>
+                    <p className={`image-number {${this.state.imageNumber > 9 ? 'double-digit' : ''} `}>{image.id}</p>
                   </li>
                 )
+                {
+                  this.setState({ imageNumber: image.id })
+                }
               })}
             </ol>
           </section>

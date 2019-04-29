@@ -46,7 +46,7 @@ ol li {
   justify-content: flex-end;
 }
 
-ol li p {
+.image-number {
   background-color: hsla(245, 41%, 69%, 0.7);
   border: 2px solid hsla(112, 85%, 59%, 0.52);
   padding: 0.5rem 0.75rem;
@@ -56,7 +56,7 @@ ol li p {
   font-weight: 600;
 }
 
-ol li p.double-digit {
+.image-number .double-digit {
   background-color: hsla(245, 41%, 69%, 0.7);
   border: 2px solid hsla(112, 85%, 59%, 0.52);
   padding: 0.75rem 1rem;
