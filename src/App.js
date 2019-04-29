@@ -102,7 +102,7 @@ class App extends Component {
                 return (
                   <li key={image.id}>
                     <img src={image.image} />
-                    <p>{image.id}</p>
+                    <p className={`ol li p {${image.id > 9 ? 'double-digit' : ''} `}>{image.id}</p>
                   </li>
                 )
               })}
