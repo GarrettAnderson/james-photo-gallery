@@ -23,24 +23,22 @@ import Image21 from './images/IMG_2718.png'
 import Image22 from './images/IMG_2849.png'
 import Image23 from './images/IMG_2851.png'
 import Image24 from './images/IMG_2853.png'
-import Image25 from './images/IMG_2855.png'
-import Image26 from './images/IMG_2856.png'
-import Image27 from './images/IMG_2857.png'
-import Image28 from './images/IMG_2858.png'
-import Image29 from './images/IMG_2859.png'
-import Image30 from './images/IMG_2860.png'
-import Image31 from './images/IMG_2861.png'
-import Image32 from './images/IMG_2862.png'
-import Image33 from './images/IMG_2863.png'
-import Image34 from './images/IMG_2864.png'
-import Image35 from './images/IMG_3139.png'
-import Image36 from './images/IMG_6028.png'
-import Image37 from './images/IMG_6312.png'
-import Image38 from './images/IMG_6426.png'
-import Image39 from './images/IMG_6562.png'
-import Image40 from './images/IMG_7255.png'
-import Image41 from './images/IMG_9556.png'
-import Image42 from './images/IMG_9987.png'
+import Image25 from './images/IMG_2856.png'
+import Image26 from './images/IMG_2857.png'
+import Image27 from './images/IMG_2858.png'
+import Image28 from './images/IMG_2859.png'
+import Image29 from './images/IMG_2860.png'
+import Image30 from './images/IMG_2861.png'
+import Image31 from './images/IMG_2863.png'
+import Image32 from './images/IMG_2864.png'
+import Image33 from './images/IMG_3139.png'
+import Image34 from './images/IMG_6028.png'
+import Image35 from './images/IMG_6312.png'
+import Image36 from './images/IMG_6426.png'
+import Image37 from './images/IMG_6562.png'
+import Image38 from './images/IMG_7255.png'
+import Image39 from './images/IMG_9556.png'
+import Image40 from './images/IMG_9987.png'
 
 const images = [
   { id: 1, image: Image1 },
@@ -82,9 +80,7 @@ const images = [
   { id: 37, image: Image37 },
   { id: 38, image: Image38 },
   { id: 39, image: Image39 },
-  { id: 40, image: Image40 },
-  { id: 41, image: Image41 },
-  { id: 42, image: Image42 }
+  { id: 40, image: Image40 }
 ]
 
 class App extends Component {
