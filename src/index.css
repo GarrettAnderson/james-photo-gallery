@@ -46,7 +46,17 @@ ol li {
 }
 
 ol li p {
-  background-color: hsla(112, 85%, 59%, 0.52);
+  background-color: hsla(245, 41%, 69%, 0.7);
+  border: 2px solid hsla(112, 85%, 59%, 0.52);
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+ol li p.double-digit {
+  background-color: hsla(245, 41%, 69%, 0.7);
   border: 2px solid hsla(112, 85%, 59%, 0.52);
   padding: 0.75rem 1rem;
   border-radius: 50%;
