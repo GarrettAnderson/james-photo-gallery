@@ -102,6 +102,7 @@ class App extends Component {
                 return (
                   <li key={image.id}>
                     <img src={image.image} />
+                    <p>{image.id}</p>
                   </li>
                 )
               })}
