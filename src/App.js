@@ -88,7 +88,7 @@ class App extends Component {
     imageNumber: []
   }
   componentDidMount() {
-    // console.log(images)
+    console.log(this.state.imageNumber)
   }
 
   render() {
@@ -101,16 +101,13 @@ class App extends Component {
           <section className="photo-gallery">
             <ol>
               {images.map((image) => {
-                console.log(image)
+                console.log(image.id)
                 return (
                   <li key={image.id}>
                     <img src={image.image} />
-                    <p className={`image-number {${this.state.imageNumber > 9 ? 'double-digit' : ''} `}>{image.id}</p>
+                    <p className={`image-number{${image.id <= 9 ? '' : 'double-digit'}} `}>{image.id}</p>
                   </li>
                 )
-                {
-                  this.setState({ imageNumber: image.id })
-                }
               })}
             </ol>
           </section>

@@ -22,7 +22,7 @@ header {
 }
 
 main {
-  background-image: url('./images/galleryBackground.png');
+  background-image: url('./images/background3.png');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100%;
@@ -36,6 +36,7 @@ ol {
   height: 100vh;
   overflow: scroll;
   padding: 1rem 0 0;
+  justify-content: center;
 }
 
 ol li {
@@ -56,10 +57,10 @@ ol li {
   font-weight: 600;
 }
 
-.image-number .double-digit {
+.image-number.double-digit {
   background-color: hsla(245, 41%, 69%, 0.7);
   border: 2px solid hsla(112, 85%, 59%, 0.52);
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1rem !important;
   border-radius: 50%;
   color: #fff;
   font-size: 1.2rem;
@@ -69,5 +70,5 @@ ol li {
 img {
   width: 75%;
   margin: 0 0 1rem;
-  box-shadow: 0px 0px 25px 5px hsla(112, 85%, 59%, 0.52);
+  box-shadow: 3px 0px 25px 5px hsla(112, 85%, 59%, 0.52);
 }
