@@ -71,4 +71,5 @@ img {
   width: 75%;
   margin: 0 0 1rem;
   box-shadow: 3px 0px 25px 5px hsla(112, 85%, 59%, 0.52);
+  border-radius: 5px;
 }

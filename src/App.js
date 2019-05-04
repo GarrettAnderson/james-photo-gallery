@@ -83,12 +83,14 @@ const images = [
   { id: 40, image: Image40 }
 ]
 
+const imageNumbers = []
+
 class App extends Component {
   state = {
     imageNumber: []
   }
   componentDidMount() {
-    console.log(this.state.imageNumber)
+    console.log(imageNumbers)
   }
 
   render() {
@@ -102,10 +104,11 @@ class App extends Component {
             <ol>
               {images.map((image) => {
                 console.log(image.id)
+                imageNumbers.push(image.id)
                 return (
                   <li key={image.id}>
                     <img src={image.image} />
-                    <p className={`image-number{${image.id <= 9 ? '' : 'double-digit'}} `}>{image.id}</p>
+                    <p className={`image-number ${imageNumbers.indexOf > 8 ? 'double-digit' : ''} `}>{image.id}</p>
                   </li>
                 )
               })}
