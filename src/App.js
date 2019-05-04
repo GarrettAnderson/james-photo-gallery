@@ -83,14 +83,12 @@ const images = [
   { id: 40, image: Image40 }
 ]
 
-const imageNumbers = []
-
 class App extends Component {
   state = {
     imageNumber: []
   }
   componentDidMount() {
-    console.log(imageNumbers)
+    console.log(this.state.imageNumber)
   }
 
   render() {
@@ -98,17 +96,26 @@ class App extends Component {
       <section className="content-container">
         <header>
           <h1>James Dean Does Other Stuff</h1>
+          <nav className="header-nav">
+            <ol>
+              <li>
+                <a href="#photos">Photography</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ol>
+          </nav>
         </header>
         <main>
-          <section className="photo-gallery">
+          <section className="photo-gallery" id="photos">
             <ol>
               {images.map((image) => {
                 console.log(image.id)
-                imageNumbers.push(image.id)
                 return (
                   <li key={image.id}>
                     <img src={image.image} />
-                    <p className={`image-number ${imageNumbers.indexOf > 8 ? 'double-digit' : ''} `}>{image.id}</p>
+                    {/* <p className="image-number">{image.id}</p> */}
                   </li>
                 )
               })}
