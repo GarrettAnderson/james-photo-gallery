@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
-import Header from './components/Header'
-import Gallery from './components/Gallery'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import Home from './pages/Home'
+import Gallery from './pages/Gallery'
 import Contact from './components/Contact'
+// import Header from './components/Header'
 
 class App extends Component {
   render() {
     return (
-      <section>
-        <Header />
-        <Gallery />
-      </section>
+      <Router history={Home}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/gallery" component={Gallery} />
+          {/* <Route exact path="/poses" component={} /> */}
+        </Switch>
+      </Router>
     )
   }
 }
