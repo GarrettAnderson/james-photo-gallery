@@ -1,18 +1,15 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Gallery from './pages/Gallery'
-import Contact from './components/Contact'
-// import Header from './components/Header'
 
 class App extends Component {
   render() {
     return (
-      <Router history={Home}>
+      <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/gallery" component={Gallery} />
-          {/* <Route exact path="/poses" component={} /> */}
+          <Route exact path="/photos" component={Gallery} />
         </Switch>
       </Router>
     )

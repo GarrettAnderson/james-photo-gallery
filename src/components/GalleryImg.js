@@ -88,24 +88,24 @@ class Gallery extends Component {
   state = {
     photos: []
   }
-
   componentDidMount() {
     console.log(data)
-    this.setState({ photos: data })
     console.log(this.state.photos)
   }
-
   render() {
     return (
       <section className="content-container">
         <main>
           <section className="photo-gallery" id="photos">
+            <h3>TEST</h3>
             <ol>
               {images.map((image) => {
                 console.log(image.id)
                 return (
                   <li key={image.id}>
-                    <img alt="canvas" src={image.image} />
+                    <p>This is for testin</p>
+                    <img src={image.image} />
+                    {/* <p className="image-number">{image.id}</p> */}
                   </li>
                 )
               })}

@@ -11,7 +11,7 @@ class Home extends Component {
           </header>
           <nav>
             <ol>
-              <Link to="/gallery.js">
+              <Link to="/photos">
                 <li>Gallery</li>
               </Link>
               <li>Contact</li>

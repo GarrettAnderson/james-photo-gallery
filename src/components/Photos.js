@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import data from '../data/gallery.json'
 import Image1 from '../images/IMG_0899.png'
 import Image2 from '../images/IMG_1520.png'
 import Image3 from '../images/IMG_1566.png'
@@ -83,13 +84,15 @@ const images = [
   { id: 40, image: Image40 }
 ]
 
-class Gallery extends Component {
+class Photos extends Component {
   state = {
-    imageNumber: []
+    photos: []
   }
-  componentDidMount() {
-    console.log(this.state.imageNumber)
-  }
+  // componentDidMount() {
+  //   console.log(data)
+  //   console.log(images)
+  // }
+
   render() {
     return (
       <section className="content-container">
@@ -100,7 +103,8 @@ class Gallery extends Component {
                 console.log(image.id)
                 return (
                   <li key={image.id}>
-                    <img src={image.image} />
+                    <p>This is the image</p>
+                    {/* <img src={image.image} /> */}
                     {/* <p className="image-number">{image.id}</p> */}
                   </li>
                 )
@@ -113,4 +117,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery
+export default Photos
