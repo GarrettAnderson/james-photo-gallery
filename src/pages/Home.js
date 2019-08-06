@@ -8,11 +8,11 @@ class Home extends Component {
 
   render() {
     return (
-      <section className="splash-screen">
-        <main>
-          <button onClick={() => this.setState({ navShown: !this.state.navShown })}>
-            {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
-          </button>
+      <main>
+        <button className="nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
+          {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
+        </button>
+        <section className="splash-screen">
           <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
             <ol>
               <Link to="/photos">
@@ -26,8 +26,8 @@ class Home extends Component {
               </Link>
             </ol>
           </nav>
-        </main>
-      </section>
+        </section>
+      </main>
     )
   }
 }

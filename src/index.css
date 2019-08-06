@@ -30,6 +30,9 @@ header h1 {
   color: hsl(349, 96%, 63%);
 }
 
+.nav-hamburger {
+}
+
 .nav-dropdown.is-shown {
   display: none;
 }
