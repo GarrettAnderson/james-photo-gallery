@@ -14,8 +14,12 @@ class Home extends Component {
               <Link to="/photos">
                 <li>Gallery</li>
               </Link>
-              <li>Contact</li>
-              <li>About</li>
+              <Link to="/contact">
+                <li>Contact</li>
+              </Link>
+              <Link to="/about">
+                <li>About</li>
+              </Link>
             </ol>
           </nav>
         </main>
