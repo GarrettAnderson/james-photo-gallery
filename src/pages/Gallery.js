@@ -107,7 +107,7 @@ class Gallery extends Component {
           <section className="gallery-page">
             <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
               <ol>
-                <Link to="/photos">
+                <Link to="/gallery">
                   <li>Gallery</li>
                 </Link>
                 <Link to="/contact">

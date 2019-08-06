@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import profileImg from '../images/IMG_0899.png'
 
 class About extends Component {
   state = {
@@ -14,10 +13,10 @@ class About extends Component {
           <button className="nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
             {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
           </button>
-          <section className="splash-screen">
+          <section className="about-page">
             <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
               <ol>
-                <Link to="/photos">
+                <Link to="/gallery">
                   <li>Gallery</li>
                 </Link>
                 <Link to="/contact">

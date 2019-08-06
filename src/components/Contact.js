@@ -11,10 +11,10 @@ class Contact extends Component {
         <button className="nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
           {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
         </button>
-        <section className="splash-screen">
+        <section className="contact-page">
           <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
             <ol>
-              <Link to="/photos">
+              <Link to="/gallery">
                 <li>Gallery</li>
               </Link>
               <Link to="/contact">
@@ -31,16 +31,16 @@ class Contact extends Component {
             <h3>Contact</h3>
             <form
               id="fs-frm"
-              accept-charset="utf-8"
+              acceptCharset="utf-8"
               action="https://formspree.io/garrettleegrahamanderson@gmail.tld"
               method="POST"
             >
               <fieldset id="fs-form-inputs">
-                <label for="full-name">Full Name</label>
+                <label htmlFor="full-name">Full Name</label>
                 <input type="text" name="name" id="full-name" placeholder="First and Last" required="" />
-                <label for="email-address">Email Address</label>
+                <label htmlFor="email-address">Email Address</label>
                 <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" />
-                <label for="message">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea
                   rows="5"
                   name="message"
