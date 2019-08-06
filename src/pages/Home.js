@@ -12,21 +12,20 @@ class Home extends Component {
         <button className="nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
           {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
         </button>
-        <section className="splash-screen">
-          <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
-            <ol>
-              <Link to="/photos">
-                <li>Gallery</li>
-              </Link>
-              <Link to="/contact">
-                <li>Contact</li>
-              </Link>
-              <Link to="/about">
-                <li>About</li>
-              </Link>
-            </ol>
-          </nav>
-        </section>
+        <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
+          <ol>
+            <Link to="/gallery">
+              <li>Gallery</li>
+            </Link>
+            <Link to="/contact">
+              <li>Contact</li>
+            </Link>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+          </ol>
+        </nav>
+        <section className="splash-screen" />
       </main>
     )
   }

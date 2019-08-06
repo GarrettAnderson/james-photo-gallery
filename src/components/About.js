@@ -1,27 +1,34 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import profileImg from '../images/IMG_0899.png'
 
 class About extends Component {
+  state = {
+    navShown: true
+  }
+
   render() {
     return (
       <main>
         <header>
-          <section className="profile-img-container">
-            <img src={profileImg} alt="headshot" className="profile-image" />
+          <button className="nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
+            {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
+          </button>
+          <section className="splash-screen">
+            <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
+              <ol>
+                <Link to="/photos">
+                  <li>Gallery</li>
+                </Link>
+                <Link to="/contact">
+                  <li>Contact</li>
+                </Link>
+                <Link to="/about">
+                  <li>About</li>
+                </Link>
+              </ol>
+            </nav>
           </section>
-          <nav className="navbar">
-            <ol>
-              <li>
-                <a href="#favorite-projects">Projects</a>
-              </li>
-              <li>
-                <a href="#about-me">About</a>
-              </li>
-              <li>
-                <a href="#contact-me">Contact</a>
-              </li>
-            </ol>
-          </nav>
         </header>
         <article id="about-me">
           <h3>About</h3>

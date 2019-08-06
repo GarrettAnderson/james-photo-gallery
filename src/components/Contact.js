@@ -1,51 +1,31 @@
 import React, { Component } from 'react'
-import Form from 'react-jsonschema-form'
+import { Link } from 'react-router-dom'
 
 class Contact extends Component {
+  state = {
+    navShown: true
+  }
   render() {
-    const formSchema = {
-      title: '',
-      type: 'object',
-      required: [ 'name' ],
-      properties: {
-        name: {
-          type: 'string',
-          title: 'Name',
-          default: ''
-        },
-        email: {
-          type: 'string',
-          title: 'Email',
-          default: ''
-        },
-        subject: {
-          type: 'string',
-          title: 'Subject',
-          default: ''
-        },
-        message: {
-          type: 'string',
-          format: 'textarea',
-          title: 'Message',
-          default: ''
-        }
-      }
-    }
     return (
       <section>
-        <header>
-          <h1>James Dean Does Other Stuff</h1>
-          <nav className="header-nav">
+        <button className="nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
+          {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
+        </button>
+        <section className="splash-screen">
+          <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
             <ol>
-              <li>
-                <a href="#photos">Photography</a>
-              </li>
-              {/* <li>
-                <a href="./components/Contact.js">Contact</a>
-              </li> */}
+              <Link to="/photos">
+                <li>Gallery</li>
+              </Link>
+              <Link to="/contact">
+                <li>Contact</li>
+              </Link>
+              <Link to="/about">
+                <li>About</li>
+              </Link>
             </ol>
           </nav>
-        </header>
+        </section>
         <main>
           <section className="contact-form" id="contact-me">
             <h3>Contact</h3>
