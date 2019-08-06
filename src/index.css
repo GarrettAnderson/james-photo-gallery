@@ -31,6 +31,9 @@ header h1 {
 }
 
 .nav-hamburger {
+  background-color: hsl(205, 2%, 98%);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-dropdown.is-shown {
