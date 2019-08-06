@@ -11,6 +11,13 @@ body {
   min-height: 100vh;
 }
 
+main {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .content-container {
   height: 100vh;
 }
@@ -31,15 +38,18 @@ header h1 {
 }
 
 .nav-hamburger {
-  background-color: hsl(205, 2%, 98%);
+  background-color: #f5f9fc;
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  min-height: 5vh;
+  border: none;
 }
 
 nav.nav-dropdown {
   display: flex;
   justify-content: flex-end;
+  background-color: #f5f9fc;
 }
 
 .nav-dropdown.is-shown {
@@ -61,14 +71,7 @@ nav.nav-dropdown {
   background-image: url('./images/NamesakeSplash.png');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-}
-
-main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: 75vh;
 }
 
 .photo-gallery ol {
@@ -93,4 +96,14 @@ ol li {
 img {
   width: 100%;
   border-radius: 5px;
+}
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
 }

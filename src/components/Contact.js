@@ -14,6 +14,9 @@ class Contact extends Component {
         <section className="contact-page">
           <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
             <ol>
+              <Link to="/">
+                <li>Home</li>
+              </Link>
               <Link to="/gallery">
                 <li>Gallery</li>
               </Link>
@@ -30,6 +33,7 @@ class Contact extends Component {
           <section className="contact-form" id="contact-me">
             <h3>Contact</h3>
             <form
+              className="contact-information-form"
               id="fs-frm"
               acceptCharset="utf-8"
               action="https://formspree.io/garrettleegrahamanderson@gmail.tld"

@@ -16,6 +16,9 @@ class About extends Component {
           <section className="about-page">
             <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
               <ol>
+                <Link to="/">
+                  <li>Home</li>
+                </Link>
                 <Link to="/gallery">
                   <li>Gallery</li>
                 </Link>
