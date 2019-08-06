@@ -21,9 +21,6 @@ a {
 }
 
 header {
-  /* background-image: url('./images/background3.png');
-  background-repeat: no-repeat;
-  background-size: cover; */
   text-align: center;
   position: sticky;
 }
@@ -31,6 +28,10 @@ header {
 header h1 {
   font-family: 'Merriweather', serif;
   color: hsl(349, 96%, 63%);
+}
+
+.nav-dropdown.is-shown {
+  display: none;
 }
 
 .header-nav ol {
