@@ -10,9 +10,6 @@ class Home extends Component {
     return (
       <section className="splash-screen">
         <main>
-          <header>
-            James Dean <span>Does</span> Other Stuff
-          </header>
           <button onClick={() => this.setState({ navShown: !this.state.navShown })}>
             {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
           </button>
