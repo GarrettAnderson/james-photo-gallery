@@ -46,7 +46,7 @@ header h1 {
   border: none;
 }
 
-nav.nav-dropdown {
+.nav-dropdown {
   display: flex;
   justify-content: flex-end;
   background-color: #fff;
@@ -135,4 +135,14 @@ fieldset {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 75vh;
+}
+
+.contact-nav-dropdown {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
+}
+
+.contact-nav-dropdown.is-shown {
+  display: none;
 }
