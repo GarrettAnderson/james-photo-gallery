@@ -9,10 +9,10 @@ class Home extends Component {
   render() {
     return (
       <main>
-        <button className="nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
+        <button className="home-nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
           {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
         </button>
-        <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
+        <nav className={`home-nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
           <ol>
             <Link to="/">
               <li>Home</li>
