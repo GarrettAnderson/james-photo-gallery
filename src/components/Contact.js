@@ -7,12 +7,12 @@ class Contact extends Component {
   }
   render() {
     return (
-      <section>
+      <section className="content-container">
         <button className="nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
           {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
         </button>
         <section className="contact-page">
-          <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
+          <nav className={`contact-nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
             <ol>
               <Link to="/">
                 <li>Home</li>
@@ -29,7 +29,7 @@ class Contact extends Component {
             </ol>
           </nav>
         </section>
-        <main>
+        <main className="contact-form-container">
           <section className="contact-form" id="contact-me">
             <h3>Contact</h3>
             <form
