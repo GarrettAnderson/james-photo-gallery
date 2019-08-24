@@ -146,3 +146,13 @@ fieldset {
 .contact-nav-dropdown.is-shown {
   display: none;
 }
+
+footer {
+  background-image: url("./images/Footer_Bkground.png");
+  background-position: bottom;
+  height: 20vh;
+}
+
+footer a {
+  background-color: #f5f9fc;
+}
