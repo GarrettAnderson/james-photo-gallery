@@ -57,7 +57,7 @@ header h1 {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  min-height: 8vh;
+  min-height: 6vh;
   border: none;
 }
 
