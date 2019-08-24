@@ -156,3 +156,9 @@ footer {
 footer a {
   background-color: #f5f9fc;
 }
+
+footer p {
+  background-color: #f5f9fc;
+  padding: 1rem;
+  text-align: center;
+}

@@ -32,13 +32,9 @@ class Home extends Component {
           <section className="splash-screen" />
         </main>
         <footer>
-          <ol>
-            <li>
-              <a href="https://www.linkedin.com/in/garrettleegrahamanderson/">
-                <i className="fab fa-linkedin-in" />
-              </a>
-            </li>
-          </ol>
+          <a href="https://www.instagram.com/jamesdeandoesotherstuff/" target="_blank">
+            <p>James Dean Does Other Stuff</p>
+          </a>
         </footer>
       </section>
     )
