@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import NamesakeSplash from '../images/NamesakeSplash.png'
 
 class Home extends Component {
   state = {
@@ -8,7 +9,7 @@ class Home extends Component {
 
   render() {
     return (
-      <section>
+      <section className="content-container">
         <main>
           <button className="home-nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
             {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
@@ -29,7 +30,9 @@ class Home extends Component {
               </Link>
             </ol>
           </nav>
-          <section className="splash-screen" />
+          <section className="splash-screen">
+            <img src={NamesakeSplash} />
+          </section>
         </main>
         <footer>
           <a href="https://www.instagram.com/jamesdeandoesotherstuff/" target="_blank">
