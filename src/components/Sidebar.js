@@ -29,10 +29,22 @@ export default class Sidebar extends Component {
               </ol>
             </nav>
   }
+
+  toggleSidebar = () => {
+    this.setState(prevState => ({
+      isOpen: !prevState.isOpen
+    }))
+  }
   
   render() {
     return <div className="sidebar-container">
       {this.renderSidebar()}
+      <div className="sidebar-icon">
+        <SidebarIcon 
+          isOpen={this.state.isOpen}
+          handleClick={this.toggleSidebar}
+        />
+      </div>
     </div>
   }
 }
