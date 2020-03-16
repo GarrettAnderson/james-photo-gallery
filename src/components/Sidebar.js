@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 import SidebarIcon from './SidebarIcon'
+import SidebarContent from './SidebarContent'
 
 export default class Sidebar extends Component {
   state = {
@@ -38,7 +39,8 @@ export default class Sidebar extends Component {
   
   render() {
     return <div className="sidebar-container">
-      {this.renderSidebar()}
+      {/* {this.renderSidebar()} */}
+      <SidebarContent isOpen={this.state.isOpen}/>
       <div className="sidebar-icon">
         <SidebarIcon 
           isOpen={this.state.isOpen}
