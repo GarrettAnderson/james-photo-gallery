@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import NamesakeSplash from '../images/NamesakeSplash.png'
-// import {Sidebar} from '../components/Sidebar.js'
+import Sidebar from './Sidebar'
 
-class Home extends Component {
+class HomeScreen extends Component {
   state = {
     navShown: true
   }
@@ -47,4 +47,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default HomeScreen
