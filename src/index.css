@@ -12,13 +12,14 @@ body {
 }
 
 main {
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column;
+    justify-content: center; */
 }
 
 .container {
+    /* display: flex; */
     height: 100vh;
 }
 
@@ -35,6 +36,12 @@ header {
 header h1 {
     font-family: 'Merriweather', serif;
     color: hsl(349, 96%, 63%);
+}
+
+/* Navigation Sidebar */
+.sidebar-container {
+  min-height: 100vh;
+  background-color: #f5f9fc;
 }
 
 .nav-hamburger {

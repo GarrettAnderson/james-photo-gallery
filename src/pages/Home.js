@@ -14,7 +14,7 @@ class Home extends Component {
       <section className="container">
         <main>
           <Sidebar/>
-          <section className="nav-section">
+          {/* <section className="nav-section">
             <button className="home-nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
               {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
             </button>
@@ -34,7 +34,7 @@ class Home extends Component {
                 </Link>
               </ol>
             </nav>
-          </section>
+          </section> */}
           <SplashScreen/>
         </main>
         <footer>
