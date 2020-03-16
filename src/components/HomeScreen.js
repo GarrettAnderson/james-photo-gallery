@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import NamesakeSplash from '../images/NamesakeSplash.png'
-import Sidebar from './Sidebar'
+// import Sidebar from './Sidebar'
 
 class HomeScreen extends Component {
   state = {
