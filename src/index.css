@@ -44,6 +44,20 @@ header h1 {
   background-color: #f5f9fc;
 }
 
+.nav-sidebar {
+  width: 200px;
+  padding-top: 25px;
+}
+
+.sidebar-link {
+  padding: 10px;
+}
+
+.sidebar-link:hover {
+  border-right: 5px solid dimgray;
+  background-color: gainsboro;
+}
+
 .nav-hamburger {
     background-color: #fff;
     display: flex;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import NamesakeSplash from '../images/NamesakeSplash.png'
 import Sidebar from '../components/Sidebar'
 import SplashScreen from '../components/SplashScreen'
