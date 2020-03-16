@@ -9,7 +9,7 @@ class Home extends Component {
 
   render() {
     return (
-      <section className="content-container">
+      <section className="container">
         <main>
           <section className="nav-section">
             <button className="home-nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
