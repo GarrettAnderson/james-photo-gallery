@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom'
 import SidebarIcon from './SidebarIcon'
 
 export default class Sidebar extends Component {
-  
+  state = {
+    isOpen: true
+  }
+
   renderSidebar = () => {
+    if (!this.state.isOpen) {
+      return null
+    }
+
     return <nav className="nav-sidebar">
             <ol>
               <Link to="/" className="sidebar-link">
