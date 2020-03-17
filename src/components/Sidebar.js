@@ -5,7 +5,7 @@ import SidebarContent from './SidebarContent'
 
 export default class Sidebar extends Component {
   state = {
-    isOpen: true
+    isOpen: false
   }
 
   renderSidebar = () => {

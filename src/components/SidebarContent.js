@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Transition} from 'react-transition-group'
 import { Link } from 'react-router-dom'
 
-const duration = 1000
+const duration = 300
 
 const sidebarStyle = {
   transition: `width ${duration}ms`
