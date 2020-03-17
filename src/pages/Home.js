@@ -16,11 +16,11 @@ class Home extends Component {
           
           <SplashScreen/>
         </main>
-        <footer>
+        {/* <footer> */}
           {/* <a href="https://www.instagram.com/jamesdeandoesotherstuff/" target="_blank">
             <p>James Dean Does Other Stuff</p>
           </a> */}
-        </footer>
+        {/* </footer> */}
       </section>
     )
   }
