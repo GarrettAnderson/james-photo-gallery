@@ -21,6 +21,7 @@ main {
 .container {
     /* display: flex; */
     height: 100vh;
+    padding: 0;
 }
 
 a {
@@ -56,6 +57,11 @@ header h1 {
 .sidebar-link:hover {
   border-right: 5px solid dimgray;
   background-color: gainsboro;
+}
+
+.sidebar-icon {
+  position: relative;
+  bottom: 16rem;
 }
 
 .nav-hamburger {
