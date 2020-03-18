@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import Sidebar from '../components/Sidebar'
+
 
 class Contact extends Component {
   state = {
@@ -8,27 +9,7 @@ class Contact extends Component {
   render() {
     return (
       <section className="content-container">
-        <button className="nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
-          {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
-        </button>
-        <section className="contact-page">
-          <nav className={`contact-nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
-            <ol>
-              <Link to="/">
-                <li>Home</li>
-              </Link>
-              <Link to="/gallery">
-                <li>Gallery</li>
-              </Link>
-              <Link to="/contact">
-                <li>Contact</li>
-              </Link>
-              <Link to="/about">
-                <li>About</li>
-              </Link>
-            </ol>
-          </nav>
-        </section>
+        <Sidebar/>
         <main className="contact-form-container">
           <section className="contact-form" id="contact-me">
             <h3>Contact</h3>
