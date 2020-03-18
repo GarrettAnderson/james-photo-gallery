@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import Sidebar from '../components/Sidebar'
 import data from '../data/gallery.json'
 import Image1 from '../images/IMG_0899.png'
 import Image2 from '../images/IMG_1520.png'
@@ -100,29 +100,7 @@ class Gallery extends Component {
   render() {
     return (
       <section className="content-container">
-        <header>
-          <button className="nav-hamburger" onClick={() => this.setState({ navShown: !this.state.navShown })}>
-            {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
-          </button>
-          <section className="gallery-page">
-            <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
-              <ol>
-                <Link to="/">
-                  <li>Home</li>
-                </Link>
-                <Link to="/gallery">
-                  <li>Gallery</li>
-                </Link>
-                <Link to="/contact">
-                  <li>Contact</li>
-                </Link>
-                <Link to="/about">
-                  <li>About</li>
-                </Link>
-              </ol>
-            </nav>
-          </section>
-        </header>
+        <Sidebar/>
         <main>
           <section className="photo-gallery" id="photos">
             <ol>

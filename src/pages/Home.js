@@ -12,7 +12,6 @@ class Home extends Component {
       <section className="container">
         <main>
           <Sidebar/>
-          
           <SplashScreen/>
         </main>
         <footer>
