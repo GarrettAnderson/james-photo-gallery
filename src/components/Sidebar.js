@@ -22,7 +22,7 @@ export default class Sidebar extends Component {
   
   render() {
     return <div className="sidebar-container">
-      {/* {this.renderSidebar()} */}
+      {this.renderSidebar()}
       <SidebarContent isOpen={this.state.isOpen}/>
       <div className="sidebar-icon">
         <SidebarIcon 

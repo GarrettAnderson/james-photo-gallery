@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import NamesakeSplash from '../images/NamesakeSplash.png'
 import Sidebar from '../components/Sidebar'
 import SplashScreen from '../components/SplashScreen'
 
@@ -13,13 +12,14 @@ class Home extends Component {
       <section className="container">
         <main>
           <Sidebar/>
+          
           <SplashScreen/>
         </main>
-        {/* <footer> */}
+        <footer>
           {/* <a href="https://www.instagram.com/jamesdeandoesotherstuff/" target="_blank">
             <p>James Dean Does Other Stuff</p>
           </a> */}
-        {/* </footer> */}
+        </footer>
       </section>
     )
   }
