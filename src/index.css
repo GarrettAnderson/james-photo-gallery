@@ -100,6 +100,11 @@ img {
     align-items: center;
 }
 
+.contact-send {
+  border: 1px solid #f5f9fc;
+  background-color: #f5f9fc;
+}
+
 fieldset {
     display: flex;
     flex-direction: column;
@@ -111,6 +116,11 @@ fieldset {
     background-size: cover;
     width: 100vw;
     background-position-x: center;
+}
+
+.contact-form-container h3 {
+  color: #fff;
+  font-weight: 200;
 }
 
 .contact-form {
@@ -128,6 +138,7 @@ fieldset {
 
 textarea {
   width: 100%;
+  margin-top: 1rem;
 }
 
 footer {

@@ -21,11 +21,8 @@ class Contact extends Component {
               method="POST"
             >
               <fieldset id="fs-form-inputs">
-                {/* <label htmlFor="full-name">Full Name</label> */}
                 <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="" />
-                {/* <label htmlFor="email-address">Email Address</label> */}
                 <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" />
-                {/* <label htmlFor="message">Message</label> */}
                 <textarea
                   rows="5"
                   name="message"
