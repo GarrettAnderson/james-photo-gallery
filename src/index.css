@@ -110,7 +110,15 @@ fieldset {
     background-image: url("./images/contact-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 75vh;
+    width: 100vw;
+    background-position-x: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 }
 
 .contact-nav-dropdown {
