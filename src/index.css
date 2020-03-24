@@ -94,6 +94,16 @@ img {
   background-image: url("./images/Footer_Bkground.png");
 }
 
+.about-me-container h3 {
+  text-align: center;
+  font-weight: 200;
+  color: #fff;
+}
+
+.about-me-container p {
+  background: rgba(255,255,255, 0.65);
+}
+
 /* Contact Form */
 
 .contact-information-form {
