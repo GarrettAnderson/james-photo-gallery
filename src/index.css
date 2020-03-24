@@ -92,6 +92,10 @@ img {
 /* About Me */
 .about-me-container {
   background-image: url("./images/Footer_Bkground.png");
+  /* height: 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .about-me-container h3 {
@@ -102,6 +106,9 @@ img {
 
 .about-me-container p {
   background: rgba(255,255,255, 0.65);
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 /* Contact Form */
