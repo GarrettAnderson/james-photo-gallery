@@ -37,9 +37,8 @@ a {
 
 /* Navigation Sidebar */
 .sidebar-container {
-  /* min-height: 100vh; */
   background-color: #f5f9fc;
-  margin-left: -15px;
+  margin-left: -20px;
 }
 
 .nav-sidebar {
