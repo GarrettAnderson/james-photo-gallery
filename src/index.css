@@ -103,6 +103,8 @@ img {
 .contact-send {
   border: 1px solid #f5f9fc;
   background-color: #f5f9fc;
+  border-radius: 5px;    
+  text-transform: uppercase;
 }
 
 fieldset {
