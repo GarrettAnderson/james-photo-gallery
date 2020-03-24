@@ -89,6 +89,11 @@ img {
     height: 100vh
 }
 
+/* About Me */
+.about-me-container {
+  background-image: url("./images/Footer_Bkground.png");
+}
+
 /* Contact Form */
 
 .contact-information-form {
