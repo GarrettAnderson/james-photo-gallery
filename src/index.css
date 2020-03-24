@@ -58,7 +58,8 @@ a {
 .sidebar-icon {
   position: relative;
   bottom: 15.75rem;
-  left: 1.5rem;
+  left: 2rem;
+  font-size: 1.5rem;
 }
 
 .photo-gallery ol {
