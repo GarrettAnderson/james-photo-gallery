@@ -3,14 +3,11 @@ import Sidebar from '../components/Sidebar'
 
 
 class Contact extends Component {
-  state = {
-    navShown: true
-  }
   render() {
     return (
-      <section className="content-container">
+      <section className="content-container contact-form-container">
         <Sidebar/>
-        <main className="contact-form-container">
+        <main>
           <section className="contact-form" id="contact-me">
             <h3>Contact</h3>
             <form

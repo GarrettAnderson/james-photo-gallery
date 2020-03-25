@@ -111,7 +111,15 @@ img {
   padding: 2rem;
 }
 
+.about-me-container i.fas.fa-bars {
+  color: white;
+}
+
 /* Contact Form */
+
+.contact-form-container i.fas.fa-bars {
+  color: white;
+}
 
 .contact-information-form {
   width: 90%;
