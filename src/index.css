@@ -12,7 +12,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     /* flex-direction: column;
     justify-content: center; */
@@ -86,7 +86,7 @@ img {
     width: 100vw;
     border-radius: 5px;
     margin: 0rem 0rem;
-    height: 100vh
+    height: 80vh
 }
 
 /* About Me */
