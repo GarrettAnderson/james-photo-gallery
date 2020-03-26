@@ -9,7 +9,7 @@ class Home extends Component {
 
   render() {
     return (
-      <section className="container">
+      <section className="container home-page">
         <main>
           <Sidebar/>
           <SplashScreen/>
