@@ -202,6 +202,10 @@ footer p {
       margin: 0rem 0rem;
       height: 20rem;
   }
+  
+  .photo-gallery {
+    width: 100vw;
+  }
 
   .photo-gallery ol {
     list-style: none;
@@ -222,6 +226,10 @@ footer p {
       margin: 0rem 0rem;
       height: 20rem;
   }
+
+    .photo-gallery {
+      width: 100vw;
+    }
 
     .photo-gallery ol {
       list-style: none;
