@@ -220,11 +220,15 @@ footer p {
     overflow: scroll;
     margin: 0;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
+  /* .photo-gallery ol li {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  } */
   .photo-gallery ol li:nth-child(3) img {
-    position: relative;
-    bottom: 5.5rem;
+    grid-column-start: 2;
   }
 
 } 

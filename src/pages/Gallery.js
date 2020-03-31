@@ -103,16 +103,16 @@ class Gallery extends Component {
         <Sidebar/>
         <main>
           <section className="photo-gallery" id="photos">
-            <ol>
+            {/* <ol> */}
               {images.map((image) => {
                 console.log(image.id)
                 return (
-                  <li key={image.id}>
+                  // <li key={image.id}>
                     <img alt="canvas" src={image.image} />
-                  </li>
+                  /* </li> */
                 )
               })}
-            </ol>
+            {/* </ol> */}
           </section>
         </main>
       </section>
