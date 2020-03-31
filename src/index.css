@@ -86,7 +86,7 @@ ol li {
     justify-content: flex-end;
 }
 
-img {
+.splash-screen img {
     width: 100vw;
     border-radius: 5px;
     margin: 0rem 0rem;
@@ -216,6 +216,12 @@ footer p {
     margin: 0;
     grid-template-columns: 1fr 1fr;
   }
+
+  .photo-gallery ol li:nth-child(3) img {
+    position: relative;
+    bottom: 5.5rem;
+  }
+
 } 
 
 @media only screen and (min-width: 768px) 
