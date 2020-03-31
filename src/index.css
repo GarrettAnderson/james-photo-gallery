@@ -202,7 +202,7 @@ footer p {
       margin: 0rem 0rem;
       height: 20rem;
   }
-  
+
   .photo-gallery {
     width: 100vw;
   }
@@ -221,7 +221,7 @@ footer p {
 @media only screen and (min-width: 768px) 
   and (max-width: 1024px) {
     img {
-      width: 17rem;
+      width: 100%;
       border-radius: 5px;
       margin: 0rem 0rem;
       height: 20rem;
