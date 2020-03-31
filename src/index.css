@@ -200,7 +200,7 @@ footer p {
       width: 100%;
       border-radius: 5px;
       margin: 0rem 0rem;
-      height: 20rem;
+      height: 100%;
   }
 
   .photo-gallery {
@@ -240,4 +240,16 @@ footer p {
       margin: 0;
       grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+@media only screen and (min-width: 1024px) {
+  .photo-gallery ol {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    height: 100vh;
+    overflow: scroll;
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
