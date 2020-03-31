@@ -83,14 +83,13 @@ ol li {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .photo-gallery img {
   width: 100%;
   border-radius: 5px;
   margin: 0rem 0rem;
-  /* height: 100%; */
 }
 
 .splash-screen img {
@@ -103,7 +102,6 @@ ol li {
 /* About Me */
 .about-me-container {
   background-image: url("./images/Footer_Bkground.png");
-  /* height: 100%; */
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
