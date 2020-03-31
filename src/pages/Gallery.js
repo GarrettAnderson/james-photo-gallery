@@ -99,7 +99,7 @@ class Gallery extends Component {
 
   render() {
     return (
-      <section className="content-container">
+      <section className="content-container gallery-container">
         <Sidebar/>
         <main>
           <section className="photo-gallery" id="photos">
