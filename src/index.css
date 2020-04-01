@@ -253,6 +253,13 @@ footer p {
       cursor: pointer;
     }
     
+    .splash-screen img {
+      width: 100%;
+      border-radius: 5px;
+      margin: 0rem 0rem;
+      height: 80vh
+    }
+
     .gallery-container main {
       display: inline;
       overflow: scroll;
@@ -282,13 +289,19 @@ footer p {
 }
 
 @media only screen and (min-width: 1024px) {
+  .larger-sidebar-nav-sidebar {
+    background-color: #f5f9fc;
+    display: inline-block;
+    width: 20vw;
+  }
+  
   .gallery-container main {
     display: inline;
     overflow: scroll;
   }
   
   .photo-gallery {
-    width: 100vw;
+    width: 80vw;
     column-count: 4;
     column-gap: 0px;
   }
