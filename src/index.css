@@ -133,7 +133,7 @@ ol li {
 
 /* Contact Form */
 
-.contact-form-container i.fas.fa-bars {
+.contact-page-container i.fas.fa-bars {
   color: white;
 }
 
@@ -256,6 +256,7 @@ footer p {
 
     .larger-sidebar-nav-sidebar li:hover {
       cursor: pointer;
+      text-decoration: none;
     }
     
     .splash-screen img {
@@ -300,6 +301,10 @@ footer p {
 
   .sidebar-icon {
     display: none;
+  }
+
+  .splash-screen img {
+    width: 80vw
   }
   
   .larger-sidebar-nav-sidebar {

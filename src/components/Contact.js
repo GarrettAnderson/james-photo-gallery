@@ -6,7 +6,7 @@ import LargerViewportSidebar from '../components/LargerViewportSidebar'
 class Contact extends Component {
   render() {
     return (
-      <section className="content-container">
+      <section className="content-container contact-page-container">
         <Sidebar/>
         <LargerViewportSidebar/>
         <main className="contact-form-container">
