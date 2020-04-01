@@ -69,6 +69,10 @@ a {
   display:none
 }
 
+.photo-gallery {
+  width: 100vw;
+}
+
 .photo-gallery ol {
     list-style: none;
     padding: 0;
@@ -289,6 +293,14 @@ footer p {
 }
 
 @media only screen and (min-width: 1024px) {
+  .sidebar-container {
+    display: none;
+  }
+
+  .sidebar-icon {
+    display: none;
+  }
+  
   .larger-sidebar-nav-sidebar {
     background-color: #f5f9fc;
     display: inline-block;
