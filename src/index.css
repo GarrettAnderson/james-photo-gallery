@@ -237,8 +237,13 @@ footer p {
 @media only screen and (min-width: 768px) 
   and (max-width: 1024px) {
     
+    .sidebar-icon {
+      display: none;
+    }
+
     .larger-sidebar-nav-sidebar {
-      display: inline
+      display: inline-block;
+      width: 20vw;
     }
     
     .gallery-container main {
@@ -254,7 +259,7 @@ footer p {
   }
 
   .photo-gallery {
-    width: 100vw;
+    width: 80vw;
     column-count: 3;
     column-gap: 0px;
   }
