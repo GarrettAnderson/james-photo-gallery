@@ -235,6 +235,10 @@ footer p {
 @media only screen and (min-width: 768px) 
   and (max-width: 1024px) {
     
+    .sidebar-container {
+      display: none;
+    }
+
     .sidebar-icon {
       display: none;
     }
@@ -243,6 +247,10 @@ footer p {
       background-color: #f5f9fc;
       display: inline-block;
       width: 20vw;
+    }
+
+    .larger-sidebar-nav-sidebar li:hover {
+      cursor: pointer;
     }
     
     .gallery-container main {
