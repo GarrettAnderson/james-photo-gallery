@@ -240,6 +240,7 @@ footer p {
     }
 
     .larger-sidebar-nav-sidebar {
+      background-color: #f5f9fc;
       display: inline-block;
       width: 20vw;
     }
