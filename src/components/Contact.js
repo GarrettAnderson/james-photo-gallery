@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import Sidebar from '../components/Sidebar'
+import LargerViewportSidebar from '../components/LargerViewportSidebar'
 
 
 class Contact extends Component {
   render() {
     return (
-      <section className="content-container contact-form-container">
+      <section className="content-container">
         <Sidebar/>
-        <main>
+        <LargerViewportSidebar/>
+        <main className="contact-form-container">
           <section className="contact-form" id="contact-me">
             <h3>Contact</h3>
             <form
