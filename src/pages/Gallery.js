@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Sidebar from '../components/Sidebar'
+import LargerViewportSidebar from '../components/LargerViewportSidebar'
 import data from '../data/gallery.json'
 import Image1 from '../images/IMG_0899.png'
 import Image2 from '../images/IMG_1520.png'
@@ -101,6 +102,7 @@ class Gallery extends Component {
     return (
       <section className="content-container gallery-container">
         <Sidebar/>
+        <LargerViewportSidebar/>
         <main>
           <section className="photo-gallery" id="photos">
             {/* <ol> */}
