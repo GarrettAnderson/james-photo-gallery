@@ -67,6 +67,10 @@ a {
   color: navy;
 }
 
+.larger-sidebar-nav-sidebar {
+  display:none
+}
+
 .photo-gallery ol {
     list-style: none;
     padding: 0;
@@ -232,6 +236,11 @@ footer p {
 
 @media only screen and (min-width: 768px) 
   and (max-width: 1024px) {
+    
+    .larger-sidebar-nav-sidebar {
+      display: inline
+    }
+    
     .gallery-container main {
       display: inline;
       overflow: scroll;
