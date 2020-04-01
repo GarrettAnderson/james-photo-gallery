@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Sidebar from '../components/Sidebar'
+import LargerViewportSidebar from '../components/LargerViewportSidebar'
 import SplashScreen from '../components/SplashScreen'
 
 class Home extends Component {
@@ -12,6 +13,7 @@ class Home extends Component {
       <section className="container home-page">
         <main>
           <Sidebar/>
+          <LargerViewportSidebar/>
           <SplashScreen/>
         </main>
         <footer>

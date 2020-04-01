@@ -14,8 +14,6 @@ body {
 main {
     height: 100vh;
     display: flex;
-    /* flex-direction: column;
-    justify-content: center; */
 }
 
 .home-page main {
@@ -97,7 +95,7 @@ ol li {
 }
 
 .splash-screen img {
-    width: 100vw;
+    width: 100%;
     border-radius: 5px;
     margin: 0rem 0rem;
     height: 80vh
