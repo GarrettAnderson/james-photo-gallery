@@ -10,7 +10,7 @@ class Home extends Component {
 
   render() {
     return (
-      <section className="container home-page">
+      <section className="home-container home-page">
         <main>
           <Sidebar/>
           <LargerViewportSidebar/>

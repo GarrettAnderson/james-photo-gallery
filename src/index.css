@@ -20,7 +20,7 @@ main {
   height: 80vh;
 }
 
-.container {
+.home-container {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -34,7 +34,7 @@ a {
 
 .content-container {
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Navigation Sidebar */
